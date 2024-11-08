@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 
 <body>
-    <nav class="flex justify-between h-20 shadow-xl px-20 bg fixed w-full">
+    <nav class="flex justify-between h-20 shadow-xl px-20 bg fixed w-full f">
         <div class="flex items-center">
             <a href="#">
                 <img class="w-14" src="assets/logo1.webp" alt="logo">
@@ -25,7 +24,7 @@
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><button class="rounded-md px-5 py-2 text-[#64ffda]"
-                    onclick="window.open('/document/CV_Muhammad Syifa Surya Saputra (Update Oktober 2024).pdf','_blank')">Resume</button>
+                    onclick="window.open('./document/CV_Muhammad Syifa Surya Saputra (Update Oktober 2024).pdf','_blank')">Resume</button>
             </li>
         </ul>
     </nav>
@@ -116,7 +115,7 @@
         </section>
 
         <section id="experience" class="flex flex-col items-center">
-            <div class="h-[800px] pt-[120px]">
+            <div class="h-auto pt-[120px]">
                 <div class="flex items-center gap-7">
                     <h2 class="text-3xl font-bold">What I've Experience</h2>
                     <h2 class="h-1 w-[350px] border-b-[1px]"></h2>
@@ -124,15 +123,15 @@
                 <div class="flex gap-10 pt-14 h-[500px] w-[1000px]">
                     <div class="flex flex-col">
                         <label
-                            class="cursor-pointer text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all duration-500 ease-in-out hover:border-[#64ffda]"
+                            class="cursor-pointer text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all ease-in-out duration-500 hover:border-[#64ffda]"
                             for="option1">RevoU</label>
                         <label
-                            class="cursor-pointer text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all duration-500 ease-in-out hover:border-[#64ffda]"
+                            class="cursor-pointer text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all ease-in-out duration-500 hover:border-[#64ffda]"
                             for="option2">PT Reska Multi
                             Usaha (KAI
                             Service)</label>
                         <label
-                            class="cursor-pointer text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all duration-500 ease-in-out hover:border-[#64ffda]"
+                            class="cursor-pointer text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all ease-in-out duration-500 hover:border-[#64ffda]"
                             for="option3">PT Neura
                             Integrasi Solusi</label>
                     </div>
@@ -190,46 +189,141 @@
             </div>
         </section>
 
-        <section id="work" class="flex flex-col items-center">
-            <div class="h-[900px] pt-[40px]">
+        <section id="work" class="flex flex-col items-center pt-[110px]">
+            <div class="h-auto mb-[20px] w-[1000px]">
                 <div class="flex items-center gap-7">
                     <h2 class="text-3xl font-bold">Some Things I've Built</h2>
-                    <h2 class="h-1 w-[300px] border-b-[1px]"></h2>
+                    <h2 class="h-1 w-[350px] border-b-[1px]"></h2>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
+
+                <!-- card 1 -->
+                <div class="flex pt-16">
+                    <img src="./assets/Nexcent.jpg" alt="screenshot Nexcent"
+                        class="w-auto h-80 object-cover grayscale hover:grayscale-0 transition-all ease-in-out duration-500">
+                    <div class="flex flex-col items-end ml-[100px] pt-4">
                         <h1>Featured Project</h1>
-                        <h2>Halcyon Theme</h2>
-                        <div>
-                            <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on
-                                Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
-                        </div>
+                        <h2 class="text-2xl font-bold w-[225px] text-right">Nexcent</h2>
+                        <p class="absolute text-right bg-[#112240] py-6 px-8 w-[550px] mt-[90px]">A minimal, dark blue
+                            theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio
+                            Marketplace, Package Control, Atom Package Manager, and npm.
+                        </p>
+                        <ul class="flex justify-between w-[350px] pt-[170px] text-[#ccd6f6] text-[13px]">
+                            <li>VS Code</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Tailwind</li>
+                        </ul>
+                        <ul class="flex gap-6 h-10 pt-5">
+                            <li>
+                                <a href="https://github.com/Muhammadsyifasurya/Nexcent.git" target="_blank"
+                                    rel="noopener"><i class="fab fa-github text-[25px]"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://muhammadsyifasurya.github.io/Nexcent/" target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt text-[23px]"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="flex flex-row-reverse pt-24 w-[1075px]">
+                    <img src="./assets/Nexcent.jpg" alt=""
+                        class="w-auto h-80 object-cover grayscale hover:grayscale-0 transition-all ease-in-out duration-500">
+                    <div class="flex flex-col items-start mr-[100px] pt-4">
+                        <h1>Featured Project</h1>
+                        <h2 class="text-2xl font-bold w-[225px] text-start">Nexcent</h2>
+                        <p class="absolute text-left bg-[#112240] py-6 px-8 w-[550px] mt-[90px]">A minimal, dark blue
+                            theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio
+                            Marketplace, Package Control, Atom Package Manager, and npm.
+                        </p>
+                        <ul class="flex justify-between w-[350px] pt-[170px] text-[#ccd6f6] text-[13px]">
+                            <li>VS Code</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Tailwind</li>
+                        </ul>
+                        <ul class="flex gap-6 h-10 pt-5">
+                            <li>
+                                <a href=""><i class="fab fa-github text-[25px]" target="_blank" rel="noopener"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-external-link-alt text-[23px]" target="_blank"
+                                        rel="noopener"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="flex pt-24">
+                    <img src="./assets/Nexcent.jpg" alt="screenshot Nexcent"
+                        class="w-auto h-80 object-cover grayscale hover:grayscale-0 transition-all ease-in-out duration-500">
+                    <div class="flex flex-col items-end ml-[100px] pt-4">
+                        <h1>Featured Project</h1>
+                        <h2 class="text-2xl font-bold w-[225px] text-right">Nexcent</h2>
+                        <p class="absolute text-right bg-[#112240] py-6 px-8 w-[550px] mt-[90px]">A minimal, dark blue
+                            theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio
+                            Marketplace, Package Control, Atom Package Manager, and npm.
+                        </p>
+                        <ul class="flex justify-between w-[350px] pt-[170px] text-[#ccd6f6] text-[13px]">
+                            <li>VS Code</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Tailwind</li>
+                        </ul>
+                        <ul class="flex gap-6 h-10 pt-5">
+                            <li>
+                                <a href=""><i class="fab fa-github text-[25px]" target="_blank" rel="noopener"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-external-link-alt text-[23px]" target="_blank"
+                                        rel="noopener"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            </div>
+        </section>
+
+        <section id="contact" class="flex flex-col items-center py-[110px]">
+            <h1>What's Next ?</h1>
+            <h2 class="text-5xl font-bold pt-4">Get In Touch</h2>
+            <p class="w-[590px] text-center pt-4">Although I’m not currently looking for any new opportunities, my inbox
+                is
+                always open.
+                Whether you have a
+                question or just want to say hi, I’ll try my best to get back to you!</p>
+            <button class="mt-12 py-3 px-6 text-[#64ffda] rounded-md">Say Hello</button>
         </section>
 
         <aside class="fixed left-0 bottom-32 rotate-90 w-32 flex mb-32">
             <ul class="flex items-center gap-7">
                 <li class="-rotate-90 transform hover:-translate-x-1 transition-all duration-300">
-                    <a href="https://github.com/muhammadsyifasurya" class="text-2xl">
+                    <a href="https://github.com/muhammadsyifasurya" target="_blank" rel="noopener" class="text-2xl">
                         <i class="fab fa-github"></i></a>
                 </li>
                 <li class="-rotate-90 transform hover:-translate-x-1 transition-all duration-300">
-                    <a href="https://www.linkedin.com/in/muhammadsyifasuryasaputra/" class="text-2xl">
+                    <a href="https://www.linkedin.com/in/muhammadsyifasuryasaputra/" target="_blank" rel="noopener"
+                        class="text-2xl">
                         <i class="fab fa-linkedin"></i></a>
                 </li>
                 <li class="-rotate-90 transform hover:-translate-x-1 transition-all duration-300">
-                    <a href="https://www.instagram.com/muhammadsyifasurya/" class="text-2xl">
+                    <a href="https://www.instagram.com/muhammadsyifasurya/" target="_blank" rel="noopener"
+                        class="text-2xl">
                         <i class="fab fa-instagram"></i></a>
                 </li>
                 <li class="-rotate-90 transform hover:-translate-x-1 transition-all duration-300">
-                    <a href="https://www.facebook.com/radenmanggalaa" class="text-2xl">
+                    <a href="https://www.facebook.com/radenmanggalaa" target="_blank" rel="noopener" class="text-2xl">
                         <i class="fab fa-facebook"></i></a>
                 </li>
                 <li class="-rotate-90 transform hover:-translate-x-1 transition-all duration-300">
-                    <a href="https://www.tiktok.com/@radenmanggala_" class="text-2xl"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.tiktok.com/@radenmanggala_" target="_blank" rel="noopener" class="text-2xl"><i
+                            class="fab fa-tiktok"></i></a>
                 </li>
                 <h2 class="h-1 w-64 border-b-[1px] border-[#8892b0]"></h2>
             </ul>
@@ -238,7 +332,8 @@
         <aside class="fixed right-0 bottom-32 rotate-90 w-32 mb-32">
             <ul class="flex items-center gap-5">
                 <li class="transform hover:-translate-x-1 transition-all duration-300">
-                    <a href="mailto:syifamuhamamd3139@gmail.com" class="text-base">syifamuhamamd3139@gmail.com</a>
+                    <a href="mailto:syifamuhamamd3139@gmail.com" class="text-base" target="_blank"
+                        rel="noopener">syifamuhamamd3139@gmail.com</a>
                 </li>
                 <li>
                     <h2 class="h-1 w-64 border-b-[1px] border-[#8892b0]"></h2>
