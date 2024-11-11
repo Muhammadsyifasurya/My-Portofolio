@@ -93,6 +93,10 @@ p {
   color: #8892b0;
 }
 
+footer p {
+  font-family: var(--font-mono);
+}
+
 div h2 {
   border-color: #233554;
 }
