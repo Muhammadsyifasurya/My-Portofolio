@@ -8,10 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: var(--font-sans);
-}
-
 :root {
   --dark-navy: #020c1b;
   --navy: #0a192f;
@@ -37,6 +33,10 @@ body {
     transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   --ham-after-active: bottom 0.1s ease-out,
     transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+}
+
+body {
+  font-family: var(--font-sans);
 }
 
 nav {
@@ -79,6 +79,7 @@ a img:hover {
 
 h1 {
   color: #64ffda;
+  font-family: var(--font-mono);
 }
 
 h2 {
@@ -113,13 +114,6 @@ div h2 {
   transform: translateY(-4px) translateX(-2px);
   box-shadow: 5px 5px 0 0 #64ffda;
   filter: grayscale(0);
-}
-
-.skill-icon {
-  background-color: white;
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
 }
 
 .profile {

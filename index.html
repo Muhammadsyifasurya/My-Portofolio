@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <nav class="flex justify-between h-20 shadow-xl px-20 bg fixed w-full f">
+    <nav class="fixed flex justify-between h-20 xl:shadow-xl px-8 xl:px-20 w-full">
         <div class="flex items-center">
             <a href="#">
                 <img class="w-14" src="assets/logo1.webp" alt="logo">
             </a>
         </div>
-        <ul class="flex items-center gap-10">
+        <ul class="hidden xl:block xl:flex xl:items-center xl:gap-10">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#work">Work</a></li>
@@ -31,13 +31,13 @@
 
     <main>
         <section class="flex justify-center">
-            <div class="max-w-6xl h-screen flex flex-col justify-center">
-                <h1 class="text-lg mb-9 font-semibold">Hi, my name is</h1>
-                <h2 class="text-7xl mb-5 font-bold">Muhammad Syifa Surya Saputra.</h2>
-                <h3 class="text-7xl mb-9 font-bold">Your Vision, My Execution.</h3>
-                <p class="mb-10 max-w-xl text-lg">I am a front-end developer dedicated to accessibility and
-                    user-centered
-                    design. Proficient in HTML, CSS, and JavaScript, I aim to convert innovative ideas into effective
+            <div class="flex flex-col justify-center mt-24 mx-5 xl:max-w-6xl xl:h-screen">
+                <h1 class="text-xl mb-4 xl:text-lg xl:font-semibold xl:mb-9">Hi, my name is</h1>
+                <h2 class="text-3xl font-bold mb-3 xl:text-7xl xl:mb-5">Muhammad Syifa Surya Saputra.</h2>
+                <h3 class="text-2xl font-bold mb-10 xl:text-7xl xl:mb-9">Your Vision, My Execution.</h3>
+                <p class="mb-10 xl:max-w-xl xl:text-lg xl:text-left">I am a front-end developer dedicated
+                    to accessibility and user-centered design. Proficient in HTML, CSS, and JavaScript, I aim to convert
+                    innovative ideas into effective
                     web applications. I am currently advancing my software engineering skills to enhance user
                     experience.</p>
                 <button class="py-4 w-56 rounded-md text-[#64ffda]">Check out my course !</button>
@@ -46,13 +46,13 @@
 
         <section id="about" class="flex items-center flex-col">
             <div class="flex flex-col py-28">
-                <div class="flex items-center gap-7">
-                    <h2 class="text-3xl font-bold">About Me</h2>
-                    <h2 class="h-1 w-[350px] border-b-[1px]"></h2>
+                <div class="flex justify-center gap-4 items-center xl:gap-7 xl:justify-start">
+                    <h2 class="text-2xl font-bold xl:text-3xl">About Me</h2>
+                    <h2 class="h-1 border-b-[1px] w-[200px] xl:w-[350px]"></h2>
                 </div>
-                <div class="flex gap-20 pt-14">
-                    <div>
-                        <p class="max-w-xl">
+                <div class="flex flex-col-reverse items-center pt-14 xl:gap-20 xl:pt-14 xl:flex-row xl:items-start">
+                    <div class="pt-6 px-4 xl:pt-0">
+                        <p class="max-w-xl text-justify xl:text-left">
                             Hello! My name is Muhammad Syifa Surya Saputra, and I am passionate about creating impactful
                             web
                             experiences. My journey in web development began with an interest in front-end technologies,
@@ -77,37 +77,47 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center flex-col py-20 mt-20">
-                    <h2 class="text-4xl mb-12">What Can I Do ?</h2>
-                    <div class="grid grid-cols-4 gap-9 p-4 max-w-5xl">
-                        <div class="skill-img col-span-2 row-span-1 bg-white flex items-center justify-center gap-5">
-                            <img src="assets/skills/html.webp" alt="" class="skill-icon">
-                            <h1 class="bg-white text-4xl font-bold">HTML</h1>
+                    <h2 class="text-3xl mb-8 xl:text-4xl xl:mb-12">What Can I Do ?</h2>
+                    <div class="grid grid-cols-4 p-4 gap-2 max-w-5xl xl:gap-9">
+                        <div
+                            class="skill-img col-span-2 row-span-1 bg-white flex items-center justify-center gap-3 xl:gap-5">
+                            <img src="assets/skills/html.webp" alt="icon html"
+                                class="object-contain bg-white w[50px] h-[50px] xl:w-[100px] xl:h-[100px]">
+                            <h1 class="bg-white text-3xl font-bold xl:text-4xl">HTML</h1>
                         </div>
                         <div class="skill-img flex justify-center">
-                            <img src="assets/skills/css.webp" alt="" class="skill-icon">
+                            <img src="assets/skills/css.webp" alt="icon css"
+                                class="object-contain bg-white w[50px] h-[50px] xl:w-[100px] xl:h-[100px]">
                         </div>
                         <div class="skill-img flex justify-center">
-                            <img src="assets/skills/javascript.webp" alt="" class="skill-icon">
+                            <img src="assets/skills/javascript.webp" alt="icon JavaScript"
+                                class="object-contain bg-white w[50px] h-[50px] xl:w-[100px] xl:h-[100px]">
                         </div>
                         <div class="skill-img flex justify-center">
-                            <img src="assets/skills/java.webp" alt="" class="skill-icon">
+                            <img src="assets/skills/java.webp" alt="icon Java"
+                                class="object-contain bg-white w[50px] h-[50px] xl:w-[100px] xl:h-[100px]">
                         </div>
-                        <div class="skill-img col-span-2 row-span-1 flex items-center gap-5 justify-center">
-                            <img src="assets/skills/react.webp" alt="" class="skill-icon">
-                            <h1 class="bg-white text-4xl font-bold">REACT</h1>
-                        </div>
-                        <div class="skill-img flex justify-center">
-                            <img src="assets/skills/nextjs.webp" alt="" class="skill-icon">
-                        </div>
-                        <div class="skill-img flex justify-center">
-                            <img src="assets/skills/github1.webp" alt="" class="skill-icon">
+                        <div class="skill-img col-span-2 row-span-1 flex items-center justify-center gap-2 xl:gap-5">
+                            <img src="assets/skills/react.webp" alt="icon React"
+                                class="object-contain bg-white w[50px] h-[50px] xl:w-[100px] xl:h-[100px]">
+                            <h1 class="bg-white text-3xl font-bold xl:text-4xl">REACT</h1>
                         </div>
                         <div class="skill-img flex justify-center">
-                            <img src="assets/skills/firebase.webp" alt="" class="skill-icon">
+                            <img src="assets/skills/nextjs.webp" alt="icon nextJs"
+                                class="object-contain bg-white w[50px] h-[50px] xl:w-[100px] xl:h-[100px]">
                         </div>
-                        <div class="skill-img col-span-2 row-span-1 flex items-center gap-4 justify-center">
-                            <img src="assets/skills/tailwind.webp" alt="" class="skill-icon">
-                            <h1 class="bg-white text-4xl font-bold">TAILWIND</h1>
+                        <div class="skill-img flex justify-center">
+                            <img src="assets/skills/github1.webp" alt="icon GitHub"
+                                class="object-contain bg-white w[50px] h-[50px] xl:w-[100px] xl:h-[100px]">
+                        </div>
+                        <div class="skill-img flex justify-center">
+                            <img src="assets/skills/firebase.webp" alt="icon Firebase"
+                                class="object-contain bg-white w[50px] h-[50px] xl:w-[100px] xl:h-[100px]">
+                        </div>
+                        <div class="skill-img col-span-2 row-span-1 flex items-center justify-center gap-1 xl:gap-4">
+                            <img src="assets/skills/tailwind.webp" alt="icon Tailwind"
+                                class="object-contain bg-white w[50px] h-[50px] xl:w-[100px] xl:h-[100px]">
+                            <h1 class="bg-white text-2xl font-bold xl:text-4xl">TAILWIND</h1>
                         </div>
                     </div>
                 </div>
@@ -115,25 +125,22 @@
         </section>
 
         <section id="experience" class="flex flex-col items-center">
-            <div class="h-auto pt-[120px]">
-                <div class="flex items-center gap-7">
-                    <h2 class="text-3xl font-bold">What I've Experience</h2>
-                    <h2 class="h-1 w-[350px] border-b-[1px]"></h2>
+            <div class="h-auto xl:pt-[120px]">
+                <div class="flex items-center justify-center gap-3 xl:gap-7 xl:justify-start">
+                    <h2 class="text-xl font-bold xl:text-3xl">What I've Experience</h2>
+                    <h2 class="h-1 border-b-[1px] w-[120px] xl:w-[350px]"></h2>
                 </div>
-                <div class="flex gap-10 pt-14 h-[500px] w-[1000px]">
-                    <div class="flex flex-col">
+                <div class="flex flex-col w-screen pt-2 xl:gap-10 xl:pt-14 xl:h-[500px] xl:w-[1000px] xl:flex-row">
+                    <div class="flex flex-row w-max overflow-x-auto xl:flex-col">
                         <label
-                            class="cursor-pointer text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all ease-in-out duration-500 hover:border-[#64ffda]"
+                            class="cursor-pointer w-max text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all ease-in-out duration-500 hover:border-[#64ffda]"
                             for="option1">RevoU</label>
                         <label
-                            class="cursor-pointer text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all ease-in-out duration-500 hover:border-[#64ffda]"
-                            for="option2">PT Reska Multi
-                            Usaha (KAI
-                            Service)</label>
+                            class="cursor-pointer w-max text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all ease-in-out duration-500 hover:border-[#64ffda]"
+                            for="option2">PT Reska Multi Usaha (KAI Service)</label>
                         <label
                             class="cursor-pointer text-[#8892b0] p-4 border-l-[2px] border-[#233554] hover:text-[#64ffda] hover:bg-[#112240] transition-all ease-in-out duration-500 hover:border-[#64ffda]"
-                            for="option3">PT Neura
-                            Integrasi Solusi</label>
+                            for="option3">PT Neura Integrasi Solusi</label>
                     </div>
 
                     <input type="radio" id="option1" name="option" />
@@ -141,7 +148,7 @@
                     <input type="radio" id="option3" name="option" />
 
                     <!-- Text container for Option 1 and Option 2 -->
-                    <div class="text1 h-60 p-4 w-[650px]">
+                    <div class="text1 h-60 p-4 xl:w-[650px]">
                         <h2>Software Engineer Bootcamp</h2>
                         <p>Oktober 2024 - Present</p>
                         <ul class="pt-6 text-[#8892b0] list-disc pl-4">
@@ -155,7 +162,7 @@
                                 efficiency with Tailwind CSS.</li>
                         </ul>
                     </div>
-                    <div class="text2 hidden h-60 p-4 w-[650px]">
+                    <div class="text2 hidden h-60 p-4 xl:w-[650px]">
                         <h2>Staff Purchasing</h2>
                         <p>November 2023 - Mei 2024</p>
                         <ul class="pt-6 text-[#8892b0] list-disc pl-4">
@@ -170,7 +177,7 @@
                                 lists.</li>
                         </ul>
                     </div>
-                    <div class="text3 hidden h-60 p-4 w-[650px]">
+                    <div class="text3 hidden h-60 p-4 xl:w-[650px]">
                         <h2>Android Developer Intern</h2>
                         <p>Juli 2020 - Desember 2020</p>
                         <ul class="pt-6 text-[#8892b0] list-disc pl-4">
@@ -186,25 +193,27 @@
             </div>
         </section>
 
-        <section id="work" class="flex flex-col items-center pt-[110px]">
-            <div class="h-auto mb-[20px] w-[1000px]">
-                <div class="flex items-center gap-7">
-                    <h2 class="text-3xl font-bold">Some Things I've Built</h2>
-                    <h2 class="h-1 w-[350px] border-b-[1px]"></h2>
+        <section id="work" class="flex flex-col items-center pt-[300px] xl:pt-[110px]">
+            <div class="h-auto xl:mb-[20px] xl:w-[1000px]">
+                <div class="flex items-center justify-center gap-2 xl:gap-7">
+                    <h2 class="text-xl font-bold xl:text-3xl">Some Things I've Built</h2>
+                    <h2 class="h-1 w-[120px] xl:w-[350px] border-b-[1px]"></h2>
                 </div>
 
                 <!-- card 1 -->
-                <div class="flex pt-16">
+                <div class="flex flex-col items-center pt-10 xl:pt-16 xl:flex-row">
                     <img src="./assets/Nexcent.jpg" alt="screenshot Nexcent"
-                        class="w-auto h-80 object-cover grayscale hover:grayscale-0 transition-all ease-in-out duration-500">
-                    <div class="flex flex-col items-end ml-[100px]">
+                        class="w-[300px] h-40 xl:h-80 xl:w-auto object-cover grayscale hover:grayscale-0 transition-all ease-in-out duration-500">
+                    <div class="flex flex-col pt-4 items-center xl:items-end xl:ml-[100px] xl:pt-0">
                         <h1>Featured Project</h1>
-                        <h2 class="text-2xl font-bold w-[225px] text-right">Nexcent</h2>
-                        <p class="absolute text-right bg-[#112240] py-6 px-8 w-[550px] mt-[75px]">Uses semantic HTML
-                            and modern CSS for a responsive, interactive design. It features a mobile-friendly layout
-                            with Flexbox and Grid for flexibility, ensuring smooth navigation and accessibility.
+                        <h2 class="text-2xl font-bold xl:w-[225px] xl:text-right">Nexcent</h2>
+                        <p class="absolute text-justify xl:text-right bg-[#112240] py-6 px-8 xl:w-[550px] mt-[75px]">
+                            Uses semantic HTML and modern CSS for a responsive, interactive design. It features a
+                            mobile-friendly layout with Flexbox and Grid for flexibility, ensuring smooth navigation and
+                            accessibility.
                         </p>
-                        <ul class="flex justify-between w-[350px] pt-[180px] text-[#ccd6f6] text-[13px]">
+                        <ul
+                            class="flex justify-around w-screen xl:justify-between pt-[200px] xl:w-[350px] xl:pt-[180px] text-[#ccd6f6] text-[13px]">
                             <li>VS Code</li>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -225,18 +234,20 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="flex flex-row-reverse pt-24 w-[1075px]">
+                <div class="flex pt-24 flex-col items-center xl:flex-row-reverse xl:w-[1075px]">
                     <img src="./assets/e-kur-btn.jpg" alt=""
-                        class="w-auto h-80 object-cover grayscale hover:grayscale-0 transition-all ease-in-out duration-500">
-                    <div class="flex flex-col items-start mr-[100px]">
+                        class="w-[300px] h-40 xl:h-80 xl:w-auto object-cover grayscale hover:grayscale-0 transition-all ease-in-out duration-500">
+                    <div class="flex flex-col pt-4 items-center xl:items-start xl:mr-[100px] xl:pt-0">
                         <h1>Featured Project</h1>
-                        <h2 class="text-2xl font-bold w-[225px] text-start">E-KUR BANK BTN</h2>
-                        <p class="absolute text-left bg-[#112240] py-6 px-8 w-[550px] mt-[75px]">Uses semantic HTML and
-                            responsive CSS to provide a user-friendly interface for applying for KUR loans. The design
-                            is mobile-friendly, utilizing Flexbox and Grid for layout flexibility, ensuring easy
+                        <h2 class="text-2xl font-bold xl:w-[225px] xl:text-start">E-KUR BANK BTN</h2>
+                        <p class="absolute text-justify xl:text-left bg-[#112240] py-6 px-8 xl:w-[550px] mt-[75px]">Uses
+                            semantic HTML and responsive CSS to provide a user-friendly interface for applying for KUR
+                            loans. The
+                            design is mobile-friendly, utilizing Flexbox and Grid for layout flexibility, ensuring easy
                             navigation through loan applications, simulations, and information.
                         </p>
-                        <ul class="flex justify-between w-[350px] pt-[205px] text-[#ccd6f6] text-[13px]">
+                        <ul
+                            class="flex justify-around w-screen pt-[250px] xl:justify-between xl:w-[350px] xl:pt-[205px] text-[#ccd6f6] text-[13px]">
                             <li>VS Code</li>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -257,25 +268,28 @@
                 </div>
 
                 <!-- card 3 -->
-                <div class="flex pt-24">
+                <div class="flex flex-col items-center pt-24 xl:flex-row">
                     <img src="./assets/twibbon.jpg" alt="screenshot Nexcent"
-                        class="w-auto h-80 object-cover grayscale hover:grayscale-0 transition-all ease-in-out duration-500">
-                    <div class="flex flex-col items-end ml-[100px]">
+                        class="w-[300px] h-40 xl:h-80 xl:w-auto object-cover grayscale hover:grayscale-0 transition-all ease-in-out duration-500">
+                    <div class="flex flex-col pt-4 items-center xl:items-end xl:ml-[100px] xl:pt-0">
                         <h1>Featured Project</h1>
-                        <h2 class="text-2xl font-bold w-[225px] text-right">Twibbon Maker</h2>
-                        <p class="absolute text-right bg-[#112240] py-6 px-8 w-[550px] mt-[75px]">The Twibbon Maker
+                        <h2 class="text-2xl font-bold w-[225px] text-center xl:text-right">Twibbon Maker</h2>
+                        <p class="absolute text-justify xl:text-right bg-[#112240] py-6 px-8 xl:w-[550px] mt-[75px]">The
+                            Twibbon
+                            Maker
                             website allows users to create custom Twibbons for social media by uploading images and
                             adjusting them to fit templates. The site offers a simple, responsive design using Flexbox
                             and Grid for layout, ensuring ease of use on both mobile and desktop devices.
                         </p>
-                        <ul class="flex justify-between w-[350px] pt-[205px] text-[#ccd6f6] text-[13px]">
+                        <ul
+                            class="flex justify-around w-screen pt-[250px] xl:justify-between xl:w-[350px] xl:pt-[205px] text-[#ccd6f6] text-[13px]">
                             <li>VS Code</li>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
                             <li>Tailwind</li>
                         </ul>
-                        <ul class="flex gap-6 h-10 pt-5">
+                        <ul class="flex gap-6 h-10 pt-5 pr-5 xl:pr-0">
                             <li>
                                 <a href="https://github.com/Muhammadsyifasurya/Twibbon.git" target="_blank"
                                     rel="noopener"><i class="fab fa-github text-[25px]"></i></a>
@@ -293,16 +307,16 @@
 
         <section id="contact" class="flex flex-col items-center py-[110px]">
             <h1>What's Next ?</h1>
-            <h2 class="text-5xl font-bold pt-4">Get In Touch</h2>
-            <p class="w-[590px] text-center pt-4">Although I’m not currently looking for any new opportunities, my inbox
-                is
-                always open.
-                Whether you have a
-                question or just want to say hi, I’ll try my best to get back to you!</p>
+            <h2 class="text-3xl font-bold xl:text-5xl xl:pt-4">Get In Touch</h2>
+            <p class="text-center px-3 pt-4 xl:w-[590px] ">Although I’m not currently looking for any new opportunities,
+                my
+                inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back
+                to you!
+            </p>
             <button class="mt-12 py-3 px-6 text-[#64ffda] rounded-md">Say Hello</button>
         </section>
 
-        <aside class="fixed left-0 bottom-32 rotate-90 w-32 flex mb-32">
+        <aside class="hidden fixed left-0 bottom-32 rotate-90 w-32 flex mb-32 xl:block">
             <ul class="flex items-center gap-7">
                 <li class="-rotate-90 transform hover:-translate-x-1 transition-all duration-300">
                     <a href="https://github.com/muhammadsyifasurya" target="_blank" rel="noopener" class="text-2xl">
@@ -326,11 +340,13 @@
                     <a href="https://www.tiktok.com/@radenmanggala_" target="_blank" rel="noopener" class="text-2xl"><i
                             class="fab fa-tiktok"></i></a>
                 </li>
-                <h2 class="h-1 w-64 border-b-[1px] border-[#8892b0]"></h2>
+                <li>
+                    <h2 class="h-1 w-64 border-b-[1px] border-[#8892b0]"></h2>
+                </li>
             </ul>
         </aside>
 
-        <aside class="fixed right-0 bottom-32 rotate-90 w-32 mb-32">
+        <aside class="hidden fixed right-0 bottom-32 rotate-90 w-32 mb-32 xl:block">
             <ul class="flex items-center gap-5">
                 <li class="transform hover:-translate-x-1 transition-all duration-300">
                     <a href="mailto:syifamuhamamd3139@gmail.com" class="text-base" target="_blank"
