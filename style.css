@@ -141,6 +141,15 @@ div h2 {
   filter: grayscale(0%);
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 aside {
   font-family: var(--font-mono);
 }
