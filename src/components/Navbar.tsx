@@ -24,7 +24,7 @@ export function Navbar() {
       // Simple intersection observer logic for active section
       const sections = navLinks.map(link => link.href.substring(1));
       let current = "";
-      
+
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -49,22 +49,21 @@ export function Navbar() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="fixed top-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none"
     >
-      <nav 
-        className={`pointer-events-auto flex items-center gap-1 p-1.5 rounded-full border transition-all duration-500 ${
-          isScrolled 
-            ? "bg-navy/60 backdrop-blur-xl border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]" 
+      <nav
+        className={`pointer-events-auto flex items-center gap-1 p-1.5 rounded-full border transition-all duration-500 ${isScrolled
+            ? "bg-navy/60 backdrop-blur-xl border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
             : "bg-navy/30 backdrop-blur-md border-transparent shadow-none"
-        }`}
+          }`}
       >
         <NavItem href="#" icon={<Home size={18} />} label="Home" isActive={activeSection === ""} />
-        
+
         {navLinks.map((link) => (
-          <NavItem 
-            key={link.href} 
-            href={link.href} 
-            icon={iconMap[link.href]} 
-            label={link.label} 
-            isActive={activeSection === link.href.substring(1)} 
+          <NavItem
+            key={link.href}
+            href={link.href}
+            icon={iconMap[link.href]}
+            label={link.label}
+            isActive={activeSection === link.href.substring(1)}
           />
         ))}
       </nav>
@@ -80,9 +79,8 @@ function NavItem({ href, icon, label, isActive }: { href: string; icon: React.Re
       href={href}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative flex items-center gap-2 px-4 py-2.5 rounded-full transition-colors duration-300 ${
-        isActive ? "text-white" : "text-slate-400 hover:text-white"
-      }`}
+      className={`relative flex items-center gap-2 px-4 py-2.5 rounded-full transition-colors duration-300 ${isActive ? "text-white" : "text-slate-400 hover:text-white"
+        }`}
     >
       {/* Active Background Pill */}
       {isActive && (
